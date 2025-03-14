@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Representa un contacto con nombre y una lista de teléfonos asociados
  */
-class Contacto {
+class Persona {
     private String name;
     private List<String> phones;
 
@@ -16,7 +16,7 @@ class Contacto {
      * @param name
      * @param phone
      */
-    public Contacto(String name, String phone) {
+    public Persona(String name, String phone) {
         this.name = name;
         this.phones = new ArrayList<>();
         this.phones.add(phone);
@@ -27,14 +27,16 @@ class Contacto {
      * @return
      */
     public String getName() {
-        return this.name;
+        return name;
     }
 
-    /**
-     * Obtiene la lista de teléfonos asociados al contacto
-     * @return
-     */
+    public void setName(String name) {
+        this.name = name;
+    }
     public List<String> getPhones() {
-        return this.phones;
+        return new ArrayList<>(phones); //devuelve una copia para no modificar la lista
+    }
+    public void setPhones(List<String> phones) {
+        this.phones = new ArrayList<>(phones);
     }
 }
