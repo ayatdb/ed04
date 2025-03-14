@@ -11,14 +11,14 @@ public class Agenda {
     private List<Contacto> contacts; // Lista de Contacto
 
     /**
-     * constructor, inicializa agenda vacía.
+     * Constructor, inicializa agenda vacía.
      */
     public Agenda() {
         this.contacts = new ArrayList<>();
     }
 
     /**
-     * agrega un contacto a la agenda.
+     * Agrega un contacto a la agenda.
      * Si el contacto ya existe, se añade el número de teléfono a la lista
      * @param name
      * @param phone
@@ -40,7 +40,7 @@ public class Agenda {
     }
 
     /**
-     * elimina un contacto de la agenda por su nombre.
+     * Elimina un contacto de la agenda por su nombre.
      * @param name
      */
     public void removeContact(String name) {
@@ -56,7 +56,7 @@ public class Agenda {
     }
 
     /**
-     * modifica un número de teléfono de un contacto específico
+     * Modifica un número de teléfono de un contacto específico
      * @param name
      * @param oldPhone
      * @param newPhone
@@ -76,7 +76,7 @@ public class Agenda {
     }
 
     /**
-     * devuelve la lista de contactos almacenados en la agenda.
+     * Devuelve la lista de contactos almacenados en la agenda.
      * @return
      */
     public List<Contacto> getContacts() {

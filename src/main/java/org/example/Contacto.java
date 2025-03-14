@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * representa un contacto con nombre y una lista de teléfonos asociados
+ * Representa un contacto con nombre y una lista de teléfonos asociados
  */
 class Contacto {
     private String name;
     private List<String> phones;
 
     /**
-     * constructor
-     * inicializa un contacto con un nombre y un número de teléfono.
+     * Constructor
+     * Inicializa un contacto con un nombre y un número de teléfono.
      * @param name
      * @param phone
      */
@@ -23,7 +23,7 @@ class Contacto {
     }
 
     /**
-     * obtiene el nombre del contacto
+     * Obtiene el nombre del contacto
      * @return
      */
     public String getName() {
@@ -31,7 +31,7 @@ class Contacto {
     }
 
     /**
-     * obtiene la lista de teléfonos asociados al contacto
+     * Obtiene la lista de teléfonos asociados al contacto
      * @return
      */
     public List<String> getPhones() {
